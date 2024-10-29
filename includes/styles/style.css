@@ -1,0 +1,164 @@
+/**
+	1. main div (holds main searchbox and results)
+	2. search box
+	3. results
+	4. autocompletes
+*/
+/*
+	search box
+*/
+.als-form input[type="submit"],
+.screen-reader-text{	
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;	
+}
+
+.als-form input[type="search"],
+.als-form input[type="text"]{	/* some themes give me goosbumbs */
+	padding: 0.375em;
+	width: 100%;	
+	max-width: 100%;
+	-webkit-appearance: textfield;
+	1px solid rgba(51, 51, 51, 0.3);
+}
+
+/*
+	Main div
+*/
+
+.als-search-content{
+		max-width: 100% !important;
+		max-width: 100%;
+		padding: 2em;
+		float:none !important;
+		margin: auto !important;
+	}
+	
+@media screen and (min-width: 800px) {
+	.als-search-content{
+		max-width: 720px !important;
+	}
+}
+/*
+	Results
+*/
+#als_sponsored {
+	background: rgba(255, 255, 11, 0.13);
+	margin-bottom: 1em;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.als_sponsored_handle{
+	text-align: center;
+}
+
+.alssnippet {
+	width: 75%;
+	position: relative;
+	display: inline-block;
+}
+
+.alsfull {
+	width: 100%;
+}
+
+.als-snippet{
+	clear:both;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+	padding-bottom: 4px;
+}
+.als-snippet .sponsored_result{
+	border-bottom:0;
+}
+
+.als-mainform{
+	padding-bottom: 20px;
+	/*border-bottom: 1px solid rgba(218, 223, 226, 0.75);*/
+	width: 100%;
+	margin: auto !important;
+}
+.als-mainform form{
+	margin-top: 10px;
+}
+
+.alsSuggestions {
+	display: none;
+}
+
+.alsSuggestions ul{
+	background: #fff;
+	list-style: none;
+	margin: 0;
+	border-bottom: 2px #E9D3E9 solid;
+	border-right: 2px #F0D4FD solid;
+	width: 100%;
+}
+
+.alsSuggestions li {
+	border-top: 1px solid rgba(219, 195, 255, 0.54);
+	position: relative;
+	overflow: hidden;
+}
+
+.alsSuggestions a {
+	color: #808080;
+	display: block;
+	line-height: 1.3125;
+	outline-offset: -1px;
+	padding: 0.84375em 0;
+}
+
+
+.als_before_results{
+	color: #a7a4a4;
+	font-weight: 100;
+}
+
+.als-loading{
+	margin:auto;
+	text-transform:uppercase;
+	font-size: 2em;
+	width: 60%;
+	min-width: 300px;
+}
+.alsthumbnail {
+	width: 20%;
+	position: relative;
+
+}
+
+
+.als-post-thumbnail  img{
+	float: left!important;
+	width: 100px!important;
+	height: 100px!important;
+	margin: 1em;
+}
+
+.als-header  h2{
+	font-size: 1.5em;
+	padding-top: 1rem;
+	margin: 0;
+
+}
+
+
+
+
+.search .site:before{
+	background-color: transparent; /*Twentyfourteen sidebar fix*/
+}
+
+.search .wp-post-image{
+	margin-right: 1em !important;
+}
+
+.entry-meta{
+font-style: italic;
+font-size: small;
+color: #808080;
+}
